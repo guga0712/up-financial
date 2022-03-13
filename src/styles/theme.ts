@@ -3,30 +3,29 @@ import { extendTheme } from '@chakra-ui/react'
 export const theme = extendTheme({
 
     colors: {
-        purple: {
-          "900": "#090017",
-          "800": "#30009c",
-          "700": "#3700b3",
-          "600": "#5600e8",
-          "500": "#6200ee",
-          "400": "#7f39fb",
-          "300": "#985eff",
-          "200": "#bb86fc",
-          "100": "#dbb2ff",
-          "50": "#dbb2ff"
+        gray: {
+            "900": "#181B23",
+            "800": "#1F2029",
+            "700": "#353646",
+            "600": "#4B4D63",
+            "500": "#616480",
+            "400": "#797D9A",
+            "300": "#9699B0",
+            "200": "#B3B5C6",
+            "100": "#D1D2DC",
+            "50": "#EEEEF2",
         }
-      },
-    fonts:{
-        heading:'Roboto',
+    },
+    fonts: {
+        heading: 'Roboto',
         body: 'Roboto'
     },
     styles: {
-        global:{
-            body:{
-                bg: 'purple.900',
-                color: 'purple.100'
+        global: {
+            body: {
+                bg: 'gray.900',
+                color: 'gray.100'
             },
-
         }
     }
 })
