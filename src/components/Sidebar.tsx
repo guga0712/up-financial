@@ -1,5 +1,5 @@
 import { Box, Stack, Text, Link, Icon } from "@chakra-ui/react";
-import { RiBankLine, RiDashboardLine, RiUser3Line } from "react-icons/ri";
+import { RiBankLine, RiDashboardLine, RiGroupLine } from "react-icons/ri";
 
 export function Sidebar() {
     return (
@@ -13,7 +13,7 @@ export function Sidebar() {
                             <Text ml="4" fontWeight="medium">Dashboard</Text>
                         </Link>
                         <Link display="flex">
-                            <Icon as={RiUser3Line} fontSize="20" />
+                            <Icon as={RiGroupLine} fontSize="20" />
                             <Text ml="4" fontWeight="medium">Clientes</Text>
                         </Link>
                         <Link display="flex">
