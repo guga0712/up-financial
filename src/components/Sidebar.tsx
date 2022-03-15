@@ -8,15 +8,15 @@ export function Sidebar() {
                 <Box>
                     <Text fontWeight="bold" color="gray.400" fontSize="small">GERAL</Text>
                     <Stack spacing="4" mt="8" align="stretch">
-                        <Link display="flex" align="center">
+                        <Link display="flex">
                             <Icon as={RiDashboardLine} fontSize="20" />
                             <Text ml="4" fontWeight="medium">Dashboard</Text>
                         </Link>
-                        <Link display="flex" align="center">
+                        <Link display="flex">
                             <Icon as={RiUser3Line} fontSize="20" />
                             <Text ml="4" fontWeight="medium">Clientes</Text>
                         </Link>
-                        <Link display="flex" align="center">
+                        <Link display="flex">
                             <Icon as={RiBankLine} fontSize="20" />
                             <Text ml="4" fontWeight="medium">Financeiro</Text>
                         </Link>
