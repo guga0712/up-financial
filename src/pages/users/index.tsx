@@ -2,6 +2,7 @@ import { Box, Flex, Heading, Button, Icon, Table, Thead, Tr, Th, Checkbox, Tbody
 import { RiAddLine, RiPencilLine } from 'react-icons/ri';
 import { Header } from "../../components/Header"
 import { Sidebar } from '../../components/Sidebar';
+import { UserData } from '../../components/User'
 
 export default function userList() {
     return (
@@ -28,25 +29,11 @@ export default function userList() {
                             </Tr>
                         </Thead>
                         <Tbody>
-                            <Tr>
-                                <Td px="6">
-                                    <Checkbox colorScheme="pink" />
-                                </Td>
-                                <Td>
-                                    <Box>
-                                        <Text fontWeight="bold">Gustavo Martins</Text>
-                                        <Text fontSize="small" color="gray.300">martis0712@hotmail.com</Text>
-                                    </Box>
-                                </Td>
-                                <Td>
-                                    15 de Março, 2022
-                                </Td>
-                                <Td>
-                                    <Button as="a" size="sm" fontSize="sm" colorScheme="purple" leftIcon={<Icon as={RiPencilLine} />}>
-                                        Editar
-                                    </Button>
-                                </Td>
-                            </Tr>
+                            <UserData name="Gustavo Martins" email="martins0712@hotmail.com" createdDate="15/03/2022" />
+                            <UserData name="Samuel Oh" email="email1@hotmail.com" createdDate="15/03/2022" />
+                            <UserData name="Usuário 1" email="email2@hotmail.com" createdDate="15/03/2022" />
+
+
                         </Tbody>
                     </Table>
                 </Box>
