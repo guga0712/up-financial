@@ -1,5 +1,5 @@
 import { Box, Flex, Text, SimpleGrid, Heading } from "@chakra-ui/react";
-import { BoxesDashboard } from "../components/BoxesDashboard";
+import { BoxesDashboard } from "../components/DashboardBox";
 import { Header } from "../components/Header";
 import { Sidebar } from "../components/Sidebar";
 
