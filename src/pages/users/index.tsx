@@ -1,11 +1,13 @@
-import { Box, Flex, Heading, Button, Icon, Table, Thead, Tr, Th, Checkbox, Tbody, Td, Text } from '@chakra-ui/react'
+import { Box, Flex, Heading, Button, Icon, Table, Thead, Tr, Th, Checkbox, Tbody, Td, Text, useDisclosure } from '@chakra-ui/react'
 import { RiAddLine, RiPencilLine } from 'react-icons/ri';
 import { Header } from "../../components/Header"
 import { Pagination } from '../../components/Pagination';
 import { Sidebar } from '../../components/Sidebar';
 import { UserData } from '../../components/User'
+import { AddUser } from "../../components/AddUser";
 
 export default function userList() {
+    const { isOpen, onOpen, onClose } = useDisclosure()
     return (
         <Box>
             <Header />
@@ -14,10 +16,11 @@ export default function userList() {
                 <Box flex="1" borderRadius="10px" bg="gray.800" p="8">
                     <Flex mb="8" justify="space-between" align="center">
                         <Heading size="lg" fontWeight="normal">Usuários</Heading>
-                        <Button as="a" size="sm" fontSize="sm" colorScheme="pink" leftIcon={<Icon as={RiAddLine} fontSize="20px" />}>
+                        <Button onClick={onOpen} as="a" size="sm" fontSize="sm" colorScheme="pink" leftIcon={<Icon as={RiAddLine} fontSize="20px" />}>
                             Criar novo
                         </Button>
                     </Flex>
+                    <AddUser isOpen={isOpen} onClose={onClose} />
                     <Table colorScheme="whiteAlpha">
                         <Thead>
                             <Tr>
